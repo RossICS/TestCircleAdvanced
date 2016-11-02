@@ -9,10 +9,10 @@ package testcircle;
 /**
  * Circle class.
  */
-public class Circle implements Comparable {
+public class Circle implements Comparable, Kaune {
 	private static double PI = 3.14;
 	private double radius;
-		
+	// we can't do this!!    radius = 10.0;	
 	
 	/**
 	 * constructor
@@ -53,7 +53,7 @@ public class Circle implements Comparable {
 
 
 	/** 
-	 * Calcuates the area of the circle.
+	 * Calculates the area of the circle.
 	 * pre: none
 	 * post: The area of the circle has been returned.
 	 */
@@ -130,10 +130,15 @@ public class Circle implements Comparable {
 	 * post: A string representing the Circle object has 
 	 * been returned.
 	 */
-//	public String toString() {
-//		String circleString;
-//
-//		circleString = "Circle has radius " + radius;
-//	 	return(circleString);
-//	}
+	public String toString() {
+		String circleString;
+
+		circleString = "Circle has radius " + radius;
+	 	return(circleString);
+	}
+
+    @Override
+    public int doThis() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

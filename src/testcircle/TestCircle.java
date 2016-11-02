@@ -14,8 +14,8 @@ package testcircle;
 	public static void main(String[] args) {
 		Circle spot = new Circle(5);
                 Circle spot1 = new Circle(4);
-		Circle spot2 = new Circle(4);
-                
+		Circle spot2 = new Circle();
+                spot.setRadius(6);
 		System.out.println("Circle radius: " + spot.getRadius());
 		System.out.println("Circle area: " + spot.area());
                 System.out.println("Circle circumference: " + spot.circumference());
