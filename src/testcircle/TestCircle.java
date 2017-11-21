@@ -15,6 +15,7 @@ package testcircle;
 		Circle spot = new Circle(5);
                 Circle spot1 = new Circle(4);
 		Circle spot2 = new Circle();
+                Disk puck = new Disk(4,.001);
                 spot.setRadius(6);
 		System.out.println("Circle radius: " + spot.getRadius());
 		System.out.println("Circle area: " + spot.area());
@@ -25,7 +26,7 @@ package testcircle;
                 
 		
 		
-		if (spot1.equals(spot2)) {
+		if (spot1.equals(puck)) {
 			System.out.println("Objects are equal.");
 		} else {
 			System.out.println("Objects are not equal.");
